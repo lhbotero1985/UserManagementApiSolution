@@ -97,6 +97,23 @@ app.UseHttpMetrics();
 
   
 ✔ Despliegue utilizando Kubernetes y configuración de CI/CD
-  No tengo el servico ACK para iniciar la publicación de los contenedores
+  Se realizo el despliegue en Kubernates utilizando la solución en la nube DigitalOcean
+
+  Las ruta para acceder:
+
+  Api
+  
+  http://159.203.147.88/Auth/login
+  http://159.203.147.88/User/Users
+
+  Prometheus
+  
+  http://138.197.63.58:9090/
+
+  SQL Server
+  
+  Server Name: 143.198.18.248,30001
+  Login: sa
+  
 
 
