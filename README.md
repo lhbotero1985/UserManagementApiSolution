@@ -97,6 +97,7 @@ app.UseHttpMetrics();
 
   
 ✔ Despliegue utilizando Kubernetes y configuración de CI/CD
+
   Se realizo el despliegue en Kubernates utilizando la solución en la nube DigitalOcean
 
   Las ruta para acceder:
