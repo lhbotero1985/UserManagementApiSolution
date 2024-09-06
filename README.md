@@ -43,7 +43,7 @@ Se utilizó .NET 8
 
 ✔ Implementa un mecanismo de logging y monitorización para los microservicios.
 
-Para el tema de Loggig se utilizo SeriLog 
+Para el tema de Logging se utilizo SeriLog 
 // Configuración de Serilog
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
