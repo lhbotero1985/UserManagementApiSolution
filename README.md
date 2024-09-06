@@ -114,6 +114,12 @@ app.UseHttpMetrics();
   
   Server Name: 143.198.18.248,30001
   Login: sa
+
+  Grafana
+  
+  http://144.126.251.5:3000/login
+
+  
   
 
 
