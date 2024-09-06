@@ -30,8 +30,8 @@ Contiene la lógica de aplicación y coordina las operaciones de alto nivel entr
 
 UserManagement.Domain
 Corazón de la solución DDD. Incluye todas las entidades, objetos de valor, agregados, eventos de dominio, y lógica de negocio que representan el modelo de negocio central. Este proyecto no debe tener dependencias hacia afuera, manteniendo la pureza del dominio.
-UserManagement.Infrastructure
 
+UserManagement.Infrastructure
 Implementa la lógica para acceder a bases de datos, sistemas de archivos, colas de mensajes, etc. Aquí se implementan los repositorios que manejan la recuperación y persistencia de los objetos del dominio.
 
 ![image](https://github.com/user-attachments/assets/17a21181-904b-4ed9-a474-4dd04e1dc667)
