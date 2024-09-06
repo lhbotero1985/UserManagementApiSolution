@@ -1,0 +1,15 @@
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\bin\Debug\net8.0\UserManagement.Application.deps.json
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\bin\Debug\net8.0\UserManagement.Application.dll
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\bin\Debug\net8.0\UserManagement.Application.pdb
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\bin\Debug\net8.0\UserManagement.Domain.dll
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\bin\Debug\net8.0\UserManagement.Domain.pdb
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserManagement.Application.csproj.AssemblyReference.cache
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserManagement.Application.AssemblyInfoInputs.cache
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserManagement.Application.AssemblyInfo.cs
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserMana.22515BBA.Up2Date
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserManagement.Application.dll
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\refint\UserManagement.Application.dll
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserManagement.Application.pdb
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\ref\UserManagement.Application.dll
