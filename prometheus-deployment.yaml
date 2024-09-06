@@ -1,46 +1,31 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    kompose.cmd: kompose convert -f docker-compose.yml
-    kompose.version: 1.31.2 (a92241f79)
-  creationTimestamp: null
+  name: prometheus-deployment
   labels:
-    io.kompose.service: prometheus
-  name: prometheus
+    app: prometheus
 spec:
   replicas: 1
   selector:
     matchLabels:
-      io.kompose.service: prometheus
-  strategy:
-    type: Recreate
+      app: prometheus
   template:
     metadata:
-      annotations:
-        kompose.cmd: kompose convert -f docker-compose.yml
-        kompose.version: 1.31.2 (a92241f79)
-      creationTimestamp: null
       labels:
-        io.kompose.network/usermanagementapisolution-default: "true"
-        io.kompose.service: prometheus
+        app: prometheus
     spec:
       containers:
-        - args:
-            - --config.file=/etc/prometheus/prometheus.yml
-          image: prom/prometheus
-          name: prometheus
-          ports:
-            - containerPort: 9090
-              hostPort: 9090
-              protocol: TCP
-          resources: {}
-          volumeMounts:
-            - mountPath: /etc/prometheus/prometheus.yml
-              name: prometheus-claim0
-      restartPolicy: Always
+      - name: prometheus
+        image: prom/prometheus
+        ports:
+        - containerPort: 9090
+        volumeMounts:
+        - name: prometheus-config-volume
+          mountPath: /etc/prometheus/prometheus.yml
+          subPath: prometheus.yml
+        args:
+        - '--config.file=/etc/prometheus/prometheus.yml'
       volumes:
-        - name: prometheus-claim0
-          persistentVolumeClaim:
-            claimName: prometheus-claim0
-status: {}
+      - name: prometheus-config-volume
+        configMap:
+          name: prometheus-config

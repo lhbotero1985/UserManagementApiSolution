@@ -17,7 +17,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución",
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 		Dockerfile = Dockerfile
+		grafana-deployment.yaml = grafana-deployment.yaml
+		grafana-service.yaml = grafana-service.yaml
+		prometheus-configmap.yaml = prometheus-configmap.yaml
+		prometheus-deployment.yaml = prometheus-deployment.yaml
+		prometheus-service.yaml = prometheus-service.yaml
 		prometheus.yml = prometheus.yml
+		sqlserver-deployment.yaml = sqlserver-deployment.yaml
+		sqlserver-service.yaml = sqlserver-service.yaml
+		usermanagementapi-deployment.yaml = usermanagementapi-deployment.yaml
+		usermanagementapi-service.yaml = usermanagementapi-service.yaml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement.Api.Tests", "src\UserManagement.Api.Tests\UserManagement.Api.Tests.csproj", "{03ACFA0D-2527-4BFD-B396-F87439C742E1}"

@@ -17,3 +17,4 @@ C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Infrastructur
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Infrastructure\obj\Debug\net8.0\ref\UserManagement.Infrastructure.dll
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Infrastructure\bin\Debug\net8.0\UserManagement.Application.dll
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Infrastructure\bin\Debug\net8.0\UserManagement.Application.pdb
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Infrastructure\obj\Debug\net8.0\UserManagement.Infrastructure.sourcelink.json

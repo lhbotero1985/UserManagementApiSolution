@@ -1,19 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  annotations:
-    kompose.cmd: kompose convert -f docker-compose.yml
-    kompose.version: 1.31.2 (a92241f79)
-  creationTimestamp: null
-  labels:
-    io.kompose.service: grafana
-  name: grafana
+  name: grafana-service
 spec:
-  ports:
-    - name: "3000"
-      port: 3000
-      targetPort: 3000
+  type: LoadBalancer  # Usa LoadBalancer para exponer Grafana a través de una IP pública
   selector:
-    io.kompose.service: grafana
-status:
-  loadBalancer: {}
+    app: grafana
+  ports:
+    - port: 3000        # Puerto donde Grafana estará expuesto externamente
+      targetPort: 3000  # Puerto donde Grafana escucha dentro del contenedor

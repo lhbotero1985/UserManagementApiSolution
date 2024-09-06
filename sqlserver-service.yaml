@@ -1,19 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  annotations:
-    kompose.cmd: kompose convert -f docker-compose.yml
-    kompose.version: 1.31.2 (a92241f79)
-  creationTimestamp: null
-  labels:
-    io.kompose.service: sqlserver
-  name: sqlserver
+  name: sqlserver-service
 spec:
+  selector:
+    app: sqlserver
   ports:
-    - name: "1433"
+    - protocol: TCP
       port: 1433
       targetPort: 1433
-  selector:
-    io.kompose.service: sqlserver
-status:
-  loadBalancer: {}
+      nodePort: 30001
+  type: NodePort

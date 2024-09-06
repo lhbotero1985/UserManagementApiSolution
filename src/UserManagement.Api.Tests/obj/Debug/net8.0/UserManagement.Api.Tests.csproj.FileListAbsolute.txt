@@ -415,3 +415,4 @@ C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj\Debug\net8.0\UserManagement.Api.Tests.genruntimeconfig.cache
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj\Debug\net8.0\ref\UserManagement.Api.Tests.dll
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\bin\Debug\net8.0\BCrypt.Net.dll
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj\Debug\net8.0\UserManagement.Api.Tests.sourcelink.json

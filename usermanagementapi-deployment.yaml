@@ -1,41 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    kompose.cmd: kompose convert -f docker-compose.yml
-    kompose.version: 1.31.2 (a92241f79)
-  creationTimestamp: null
+  name: usermanagementapi-deployment
   labels:
-    io.kompose.service: usermanagementapi
-  name: usermanagementapi
+    app: usermanagementapi
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
-      io.kompose.service: usermanagementapi
-  strategy: {}
+      app: usermanagementapi
   template:
     metadata:
-      annotations:
-        kompose.cmd: kompose convert -f docker-compose.yml
-        kompose.version: 1.31.2 (a92241f79)
-      creationTimestamp: null
       labels:
-        io.kompose.network/usermanagementapisolution-default: "true"
-        io.kompose.service: usermanagementapi
+        app: usermanagementapi
     spec:
       containers:
-        - env:
-            - name: ASPNETCORE_ENVIRONMENT
-              value: Development
-            - name: ConnectionStrings__DefaultConnection
-              value: Server=sqlserver;Database=UserManagementDb;User=sa;Password=Your_password123;TrustServerCertificate=True;
-          image: usermanagementapi
-          name: usermanagementapi
-          ports:
-            - containerPort: 80
-              hostPort: 5000
-              protocol: TCP
-          resources: {}
-      restartPolicy: Always
-status: {}
+      - name: usermanagementapi
+        image: lhbotero1985/usermanagementapi:latest  # Imagen de Docker Hub
+        ports:
+        - containerPort: 80  # Puerto en el que la API escucha dentro del contenedor
+        env:
+        - name: ASPNETCORE_ENVIRONMENT
+          value: "Development"
+        - name: ConnectionStrings__DefaultConnection
+          value: "Server=143.198.18.248,30001;Database=UserManagementDb;User=sa;Password=Your_password123;TrustServerCertificate=True;"

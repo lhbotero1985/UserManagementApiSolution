@@ -9,3 +9,4 @@ C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Domain\obj\De
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Domain\obj\Debug\net8.0\refint\UserManagement.Domain.dll
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Domain\obj\Debug\net8.0\UserManagement.Domain.pdb
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Domain\obj\Debug\net8.0\ref\UserManagement.Domain.dll
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Domain\obj\Debug\net8.0\UserManagement.Domain.sourcelink.json
