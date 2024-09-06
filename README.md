@@ -52,6 +52,15 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 Para el tema monitirzación se utilizo Prometheus y Grafana
 
+Prometheus
+
+![image](https://github.com/user-attachments/assets/ef5fe88d-2633-4a27-b6a2-c435127a21ee)
+
+Grafana
+
+![image](https://github.com/user-attachments/assets/1c73288d-727b-458e-83cd-bf62fc3fbbd4)
+
+
 // Configuración de Prometheus para exposición de métricas
 app.UseHttpMetrics();
 
@@ -75,12 +84,17 @@ app.UseHttpMetrics();
  
 ✔ Documenta la API usando Swagger
   Se documento la api en Swagger
+
+  ![image](https://github.com/user-attachments/assets/5dc18f28-13b4-4664-9c94-1c9972940ba1)
+  
   
 ✔ Uso adecuado de .NET Core y patrones de diseño. 
   Se realizo uso adecuado de .Net Core y de patrones de diseño
   
 ✔ Seguridad en la API (autenticación y autorización).
   Se utilizo JWT para asegurar el RestApi
+  ![image](https://github.com/user-attachments/assets/73b72403-a4d2-4697-a17c-458f108822a7)
+
   
 ✔ Despliegue utilizando Kubernetes y configuración de CI/CD
   No tengo el servico ACK para iniciar la publicación de los contenedores
