@@ -13,6 +13,7 @@ namespace UserManagement.Domain.Entities
         public string Email { get; set; } = string.Empty;
         public string Username { get; set; }
         public string Password { get; set; }
+        public string Rol { get; set; }
 
     }
 }

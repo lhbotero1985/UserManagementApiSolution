@@ -397,6 +397,7 @@ C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Integrati
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.IntegrationTests\obj\Debug\net8.0\UserManagement.Api.IntegrationTests.AssemblyInfoInputs.cache
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.IntegrationTests\obj\Debug\net8.0\UserManagement.Api.IntegrationTests.AssemblyInfo.cs
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.IntegrationTests\obj\Debug\net8.0\UserManagement.Api.IntegrationTests.csproj.CoreCompileInputs.cache
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.IntegrationTests\obj\Debug\net8.0\UserManagement.Api.IntegrationTests.sourcelink.json
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.IntegrationTests\obj\Debug\net8.0\UserMana.1BD00CA6.Up2Date
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.IntegrationTests\obj\Debug\net8.0\UserManagement.Api.IntegrationTests.dll
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.IntegrationTests\obj\Debug\net8.0\refint\UserManagement.Api.IntegrationTests.dll

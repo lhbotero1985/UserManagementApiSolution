@@ -8,9 +8,9 @@ C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\o
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserManagement.Application.AssemblyInfoInputs.cache
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserManagement.Application.AssemblyInfo.cs
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserManagement.Application.sourcelink.json
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserMana.22515BBA.Up2Date
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserManagement.Application.dll
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\refint\UserManagement.Application.dll
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserManagement.Application.pdb
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\ref\UserManagement.Application.dll
-C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Application\obj\Debug\net8.0\UserManagement.Application.sourcelink.json

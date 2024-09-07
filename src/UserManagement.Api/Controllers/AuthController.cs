@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using UserManagement.Application.Interfaces; // Asegúrate de tener la interfaz de servicio adecuada
-using UserManagement.Domain.Entities; // Asegúrate de tener un modelo para las credenciales de usuario
+using UserManagement.Domain.Entities;
 
 namespace UserManagement.Api.Controllers
 {
@@ -24,6 +23,8 @@ namespace UserManagement.Api.Controllers
             _userService = userService;
             _jwtSecret = configuration["Jwt:Key"]; // Asegúrate de que esté configurado en tu appsettings.json
             _jwtSubject = configuration["Jwt:Subject"];
+            _jwtIssuer = configuration["Jwt:Key"];
+            _jwtAudience = configuration["Jwt:Key"]; 
         }
 
         [HttpPost("login")]
@@ -41,32 +42,26 @@ namespace UserManagement.Api.Controllers
 
         private string GenerateJwtToken(User user)
         {
+            // Generate JWT token
 
 
-            var claims = new[]
+            //crear la informacion del usuario para token
+            var userClaims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.Sub,_jwtSubject ),
-                new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString() ),
-                new Claim(JwtRegisteredClaimNames.Iat,DateTime.UtcNow.ToString() ),
-                new Claim("id",user.Id.ToString()),
-
+                new Claim("IdUsuario",user.Id.ToString())
             };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSecret));
-            var sigiIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSecret!));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
 
-
-            var token = new JwtSecurityToken(
-                _jwtIssuer,
-                 _jwtAudience,
-                 claims,
-                 expires: DateTime.Now.AddMinutes(60),
-                 signingCredentials:sigiIn
-
+            //crear detalle del token
+            var jwtConfig = new JwtSecurityToken(
+                claims: userClaims,
+                expires: DateTime.UtcNow.AddMinutes(10),
+                signingCredentials: credentials
                 );
 
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            return new JwtSecurityTokenHandler().WriteToken(jwtConfig);
 
         }
     }

@@ -21,10 +21,10 @@ namespace UserManagement.Api.Controllers
 
        
         [HttpGet("Users")]
+        [Authorize]
         public async Task<IActionResult> GetUsers()
         {
-            var identity = HttpContext.User.Identity as ClaimsIdentity;
-
+           
            
 
 
@@ -32,7 +32,9 @@ namespace UserManagement.Api.Controllers
             return Ok(users);
         }
 
+
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<IActionResult> GetUser(int id)
         {
             var user = await _userService.GetUserAsync(id);
@@ -47,6 +49,7 @@ namespace UserManagement.Api.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<IActionResult> UpdateUser(int id, [FromBody] User user)
         {
             var existingUser = await _userService.GetUserAsync(id);
@@ -59,13 +62,23 @@ namespace UserManagement.Api.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<IActionResult> DeleteUser(int id)
         {
-            var existingUser = await _userService.GetUserAsync(id);
+
+            var identity = HttpContext.User.Identity as ClaimsIdentity;
+
+            var idUsuarioToken = identity.Claims.FirstOrDefault(x => x.Type == "IdUsuario").Value;
+
+            var existingUser = await _userService.GetUserAsync(Convert.ToInt32(idUsuarioToken));
             if (existingUser == null) return NotFound();
 
-            await _userService.DeleteUserAsync(id);
-            return NoContent();
+            if (existingUser.Rol.Equals("Adm"))
+            {
+                 await _userService.DeleteUserAsync(id);
+                return Ok(new { message = "Se eliminó con éxito" });
+            }
+            return Unauthorized(new { message = "No tiene el perfil administrador para eliminar usuario" });
         }
     }
 }

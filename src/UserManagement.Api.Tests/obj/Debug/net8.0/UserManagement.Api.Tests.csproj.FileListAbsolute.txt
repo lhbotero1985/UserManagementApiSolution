@@ -311,6 +311,7 @@ C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\bin
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\bin\Debug\net8.0\refs\System.Xml.XPath.dll
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\bin\Debug\net8.0\refs\System.Xml.XPath.XDocument.dll
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\bin\Debug\net8.0\refs\WindowsBase.dll
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\bin\Debug\net8.0\BCrypt.Net.dll
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\bin\Debug\net8.0\FluentAssertions.dll
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Testing.dll
@@ -408,11 +409,10 @@ C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj\Debug\net8.0\UserManagement.Api.Tests.AssemblyInfoInputs.cache
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj\Debug\net8.0\UserManagement.Api.Tests.AssemblyInfo.cs
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj\Debug\net8.0\UserManagement.Api.Tests.csproj.CoreCompileInputs.cache
+C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj\Debug\net8.0\UserManagement.Api.Tests.sourcelink.json
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj\Debug\net8.0\UserMana.B1B58351.Up2Date
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj\Debug\net8.0\UserManagement.Api.Tests.dll
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj\Debug\net8.0\refint\UserManagement.Api.Tests.dll
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj\Debug\net8.0\UserManagement.Api.Tests.pdb
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj\Debug\net8.0\UserManagement.Api.Tests.genruntimeconfig.cache
 C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj\Debug\net8.0\ref\UserManagement.Api.Tests.dll
-C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\bin\Debug\net8.0\BCrypt.Net.dll
-C:\Users\PC-1\Desktop\UserManagementApiSolution\src\UserManagement.Api.Tests\obj\Debug\net8.0\UserManagement.Api.Tests.sourcelink.json
