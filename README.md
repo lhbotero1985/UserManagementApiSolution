@@ -92,7 +92,7 @@ app.UseHttpMetrics();
   Se realizo uso adecuado de .Net Core y de patrones de diseño
   
 ✔ Seguridad en la API (autenticación y autorización).
-  Se utilizo JWT para asegurar el RestApi
+  Se utilizo JWT para asegurar el RestApi, solo el usuario con Adm puede utilizar el api para Eliminar Usuarios.
   ![image](https://github.com/user-attachments/assets/73b72403-a4d2-4697-a17c-458f108822a7)
 
   
